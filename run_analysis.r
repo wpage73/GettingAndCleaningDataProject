@@ -126,4 +126,4 @@ aggregateData$activity <- as.character(aggregateData$activity)
 aggregateData$subjectId <- as.numeric(aggregateData$subjectId)
 
 ## write ordered, aggregated data to csv file in working directory
-write.csv(aggregateData[order(aggregateData$subjectId,aggregateData$activity),],"aggregateData.csv")
+write.csv(aggregateData[order(aggregateData$subjectId,aggregateData$activity),],"aggregateData.csv",row.names = FALSE)
